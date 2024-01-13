@@ -1,0 +1,903 @@
+/* ====================================================Area-01 nav bar start================================================================== */
+*{
+   
+    font-family: 'Roboto', sans-serif;
+    
+   
+}
+.container{
+
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.logo-area{
+    
+    display: flex;
+    flex: 1;
+    width: 30%;
+    height: 100%;
+    border-radius: 20%;
+    
+}
+.logo-area > img{
+    width: 100px;
+    height: 100px;
+    align-content: center;
+    border-radius: 20px;
+
+    
+}
+
+  .logo-area > img:hover {
+    background-position: 0;
+    border: 1px solid blue;
+    cursor: pointer;
+   }
+
+  /* ========================================================== */ 
+    /* Animation property */
+  .logo-area > img {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+.logo-area > img {
+  position: absolute;
+ 
+  
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+}
+
+   /* ========================================================== */ 
+   
+   
+
+.nav-area{
+  
+    display: flex;
+    flex: 1;
+    width: 80%;
+    height: 100%;
+    border-radius:100cm ;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: azure;
+    
+    
+    
+}
+.inner-list{
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    
+  
+}
+.inner-list-items{
+    display: flex;
+    margin-right: 70px;
+    justify-items: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-right: 70px;
+   
+   
+
+
+    background-image: linear-gradient(
+        to right,
+        yellow,
+        yellow 50%,
+        #000 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    
+
+}
+
+.inner-list-items:before{
+    content: '';
+    background: yellow;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .inner-list-items:hover {
+    background-position: 0;
+    
+   }
+   
+   .inner-list-items:hover::before{
+     width: 100%;
+   }
+/* ====================================================Area-01 nav bar end================================================================== */
+
+
+
+
+/* ====================================================Area-02 start ================================================================== */
+.main-slider{
+   
+    width: 100%;
+    height: 700px;
+    background-image: url(brazil.jpg);
+    background-size: cover;
+    position: relative;
+    top: -150px;
+    z-index: -1;
+    /*opacity: 0.8; */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+  }
+
+  
+.text-overlay p,h1 {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:white; 
+    font-size: 70px; 
+    text-align:right;
+    margin: 10px;
+    font-weight: 600;
+    font-family: Algerian;
+    
+    
+  }
+
+
+  .text-overlay h3 {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:white; 
+    font-size: 40px; 
+    text-align:right;
+    margin: 10px;
+    font-weight: 600;
+    font-family: Algerian;
+    
+    
+  }
+
+  .glow-on-hover {
+    
+    top: 85%; 
+    left: 70%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px 20px;
+    text-decoration: none;
+    
+    font-size: 16px;
+    
+    /* ======================================================= */
+
+    width: 410px;
+    height: 65px;
+    border: none;
+    outline: none;
+    color: rgba(25, 42, 86,1.0);
+    background: #111;
+    cursor: pointer;
+    position: absolute;
+    
+    border-radius: 10px;
+  }
+    
+
+  /* ======================================================= */
+
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: gold;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.picker-container{
+    position: relative;
+    top: 50%; 
+    left: 20%;
+    
+}
+  
+
+/* ====================================================Area-02 end================================================================== */
+
+
+
+
+/* ====================================================Area-03 start================================================================== */
+.main-outer03{
+    
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inner-outer-01{
+    width: 23%;
+    height: 100%;
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+    
+   
+}
+.inner-outer-02{
+    width: 23%;
+    height: 75%;
+ 
+    background-image: url(rio2.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    
+}
+.inner-outer-03{
+    width: 50%;
+    height: 100%;
+   
+    
+}
+
+.inner-outer-o1-partA{
+    
+    background-color: aqua;
+    background-image: url(rio1.jpg);
+    background-size: cover;
+    
+}
+
+.inner-outer-o1-partB{
+    
+    background-color: chartreuse;
+    background-image: url(rio3.jpg);
+    background-size: cover;
+}
+
+.paragaraph-area >h2{
+    color: rgba(25, 42, 86,1.0);
+    font-size: 40px;
+    font-weight: 200;
+   font-family: Roboto;
+}
+
+.paragaraph-area > p{
+    color: rgba(25, 42, 86,1.0);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+
+    
+}
+/* ====================================================Area-03 end================================================================== */
+
+
+
+/* ====================================================Area-04 start================================================================== */
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+.Area-04-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Area-04-outer{
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color:rgba(241, 242, 246,1.0) ;
+
+}
+.Area-04-inner{
+   
+    width: 23%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.Area-04-inner-partA{
+   
+    width: 340px;
+    height: 200px;
+    color: rgba(72, 52, 212,1.0);
+    font-weight: 200;
+    
+}
+.Area-04-inner-partB{
+   
+    width: 340px;
+    height: 200px;
+    color: rgba(55, 66, 250,1.0);
+    font-weight: 200;
+    
+}
+
+.Area-04-inner-partB >p{
+    font-weight: 100;
+    font-size: 15px;
+   
+    font-family: 'Roboto', sans-serif;
+    
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+
+    }
+
+
+
+/* ================================================ */
+.Area-04-inner-partA{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.Area-04-inner-partA:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+    cursor: pointer;
+  }
+  
+ 
+.Area-04-inner-partA{
+    color: #54b3d6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+
+/* ====================================================Area-04 end================================================================== */
+
+
+
+/* ====================================================Area-05 start================================================================== */
+.area-05-outer{
+    
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.area-05-outer > h2{
+    font-size: 35px;
+}
+
+/* .area-05-btn{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+
+    position: absolute;
+    top: 20px;
+    left: 1200px; 
+} */
+
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+
+
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    
+    
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: black;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: black;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+        background: white;
+        transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: white;
+    }
+  }
+
+
+@supports (display: grid) {
+  body {
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.625rem;
+  grid-template-areas: ". main main ." ". main main .";
+  }
+  
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}}
+/* ====================================================Area-05 end================================================================== */
+
+
+
+/* ====================================================Area-06 start================================================================== */
+.area-06-main-outer{
+    
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.area-06-main-inner{
+  
+    width: 20%;
+    height: 100%;
+    justify-content:space-between ;
+    flex: 1;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+   
+    
+}
+
+.visit-place-01{
+    background-image: url(rio2.jpg);
+    background-size: cover;
+}
+.visit-place-02{
+    background-image: url(visit2.jpg);
+    background-size: cover;
+}
+.visit-place-03{
+    background-image: url(visit3.jpg);
+    background-size: cover;
+}
+.visit-place-04{
+    background-image: url(visit4.jpg);
+    background-size: cover;
+    
+}
+
+
+.area-06-main-inner:hover{
+    cursor: pointer;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 50ms;
+  
+    
+}
+
+@keyframes moveToRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+/* ====================================================Area-06 end================================================================== */
+
+
+
+
+/* ====================================================Area-07 start================================================================== */
+
+/* ====================================================Area-07 end================================================================== */
+
+
+
+
+
+/* ====================================================Area-08 start================================================================== */
+.area-05-outer{
+    
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.area-05-outer > h2{
+    font-size: 35px;
+}
+
+/* .area-05-btn{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+
+    position: absolute;
+    top: 20px;
+    left: 1200px; 
+} */
+
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+
+
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    
+    
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: black;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: black;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+        background: white;
+        transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: white;
+    }
+  }
+
+
+@supports (display: grid) {
+  body {
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.625rem;
+  grid-template-areas: ". main main ." ". main main .";
+  }
+  
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}}
+/* ====================================================Area-08 end================================================================== */
+
+
+
+/* ====================================================Area-09 start================================================================== */
+.map-area {
+    width: 100%;
+  }
+/* ====================================================Area-09 end================================================================== */
+
+
+
+
+/* ====================================================Area-10 start================================================================== */
+
+    
+.footer{
+    background:rgba(25, 42, 86,1.0);
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+ .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+.footer .row a:hover{
+    color:#fff;
+    }
+    
+.footer .row ul{
+    width:100%;
+    }
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+ .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+   
+ .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+.footer .row a i{
+    margin:0% 3%;
+    }
+    
+/* ====================================================Area-10 end================================================================== */
+
+.space{
+    width: 100%;
+    height: 100px;
+}
+
+.space2{
+    width: 100%;
+    height: 60px;
+}

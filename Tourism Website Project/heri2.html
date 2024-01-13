@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link heri 02</title>
+    <style>
+        .space{
+            width: 100%;
+            height: 200px;
+        }
+    
+    
+    
+    
+    
+    .container{
+
+width: 100%;
+height: 40px;
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+position: fixed;
+}
+.logo-area{
+
+display: flex;
+flex: 1;
+width: 30%;
+height: 100%;
+
+}
+.logo-area > img{
+width: 100px;
+height: 100px;
+align-content: center;
+
+
+}
+
+.logo-area > img:hover {
+background-position: 0;
+border: 1px solid blue;
+cursor: pointer;
+}
+
+/* ========================================================== */ 
+/* Animation property */
+.logo-area > img {
+animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+0%, 7% {
+transform: rotateZ(0);
+}
+15% {
+transform: rotateZ(-15deg);
+}
+20% {
+transform: rotateZ(10deg);
+}
+25% {
+transform: rotateZ(-10deg);
+}
+30% {
+transform: rotateZ(6deg);
+}
+35% {
+transform: rotateZ(-4deg);
+}
+40%, 100% {
+transform: rotateZ(0);
+}
+}
+
+
+
+.logo-area > img {
+position: absolute;
+
+
+background: #444;
+background: linear-gradient(top, #555, #333);
+border: none;
+
+border-radius: 0 0 0.2em 0.2em;
+color: #fff;
+font-family: Helvetica, Arial, Sans-serif;
+font-size: 1em;
+transform-origin: 50% 5em;
+}
+
+/* ========================================================== */ 
+
+
+
+.nav-area{
+border: 2px solid white;
+display: flex;
+flex: 1;
+width: 80%;
+height: 100%;
+border-radius:100cm ;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+background-color: azure;
+
+
+}
+.inner-list{
+list-style: none;
+display: flex;
+justify-items: center;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+
+
+}
+.inner-list-items{
+display: flex;
+margin-right: 70px;
+justify-items: flex-end;
+align-items: center;
+text-align: center;
+margin-right: 70px;
+
+
+
+
+background-image: linear-gradient(
+    to right,
+    yellow,
+    yellow 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+
+}
+
+.inner-list-items:before{
+content: '';
+background: yellow;
+display: block;
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 0;
+height: 3px;
+transition: all 0.3s ease-in-out;
+}
+
+.inner-list-items:hover {
+background-position: 0;
+
+}
+
+.inner-list-items:hover::before{
+ width: 100%;
+}
+/* ====================================================Area-01 nav bar end================================================================== */
+
+
+
+
+/* ====================================================body start================================================================== */
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.90)),url('backgroundImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  /* ====================================================body end================================================================== */
+
+
+  
+  /* ====================================================content stat================================================================== */
+  .content-1{
+    
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex: 1;
+    
+    
+  }
+  .content-part1{
+    width: 45%;
+    height: 100%;
+    margin: 10px;
+
+    
+  }
+  .content-part2{
+    width: 45%;
+    height: 100%;
+    margin: 10px;
+   
+  }
+
+  
+  /* ====================================================content end================================================================== */
+
+
+
+
+  /* ====================================================Area-10 start================================================================== */
+
+    
+.footer{
+    background:rgba(25, 42, 86,1.0);
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+ .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+.footer .row a:hover{
+    color:#fff;
+    }
+    
+.footer .row ul{
+    width:100%;
+    }
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+ .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+   
+ .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+.footer .row a i{
+    margin:0% 3%;
+    }
+    
+/* ====================================================Area-10 end================================================================== */
+
+
+
+.con-1{
+    background-image: url(heri1.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+}
+.con-2{
+    font-size: 25px;
+    color: white;
+}
+.con-3{
+    font-size: 25px;
+    color: white;
+}
+.con-4{
+    background-image: url(amazon.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+}
+
+
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- ================================================Area-01-nav bar start====================================================================-->
+    <div class="container">
+        <div class="logo-area">
+            <img src="riologo.jpg" alt="no"> 
+    
+        </div>
+        <div class="nav-area">
+            <nav>
+                <ul class="inner-list">
+                    <li class="inner-list-items"><a href="index.html"> Home</a> </li>
+                    <li class="inner-list-items"><a href="heritage.html" target="_blank">Heritage</a> </li>
+                    <li class="inner-list-items"><a href="hotelbooking.html" target="_blank"> Hotel Booking</a> </li>
+                    <li class="inner-list-items"><a href="galley.html" target="_blank"> Gallery</a> </li>
+                    <li class="inner-list-items"><a href="contact.html" target="_blank"> Contact</a> </li>
+                    <li class="inner-list-items"><a href="branch.html" target="_blank"> Branches</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    
+    </div> 
+
+
+    <div class="space">  </div>
+    <!-- ================================================nav bar end====================================================================-->
+
+
+
+    <!-- ================================================Content start=============================================================-->
+    <div class="content-1">
+        <div class="content-part1 con-1"></div>
+        <div class="content-part2 con-2" >
+                <p>
+                    As one ventures beyond the lush embrace of the rainforest, the landscape undergoes
+                     a dramatic transformation. The mesmerizing Iguazu Falls, a testament to the raw power
+                      of nature, straddle the border between Brazil and Argentina. Here, the roaring wate
+                      rs of the Iguazu River plunge over precipitous cliffs, creating a symphony of mist 
+                      and thunder that reverberates through the surrounding jungle. Rainbows dance in th
+                      e spray, adding a kaleidoscopic touch to this natural spectacle. The juxtaposition o
+                    f untamed energy and delicate beauty makes Iguazu Falls an unparalleled manifestation of nature's grandeur.
+                </p>
+        </div>
+
+    </div>
+    <div class="space">  </div>
+
+
+
+    <div class="content-1">
+        <div class="content-part1 con-3">
+            <p>
+                As one ventures beyond the lush embrace of the rainforest, the landscape undergoes
+                a dramatic transformation. The mesmerizing Iguazu Falls, a testament to the raw power
+                 of nature, straddle the border between Brazil and Argentina. Here, the roaring wate
+                 rs of the Iguazu River plunge over precipitous cliffs, creating a symphony of mist 
+                 and thunder that reverberates through the surrounding jungle. Rainbows dance in th
+                 e spray, adding a kaleidoscopic touch to this natural spectacle. The juxtaposition o
+               f untamed energy and delicate beauty makes Iguazu Falls an unparalleled manifestation of nature's grandeur.
+            </p>
+        </div>
+        <div class="content-part2 con-4">
+            
+        </div>
+
+    </div>
+    <div class="space">  </div>
+
+
+     <!-- ================================================Content end=============================================================-->
+
+
+
+      
+    <!-- ==============================================Area-10 start====================================================================-->
+    
+<div class="footer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Locations</a></li>
+</ul>
+</div>
+
+<div class="row">
+Rio the janiro Copyright © 2023 Inferno - All rights reserved || Designed By: 19APP 4349
+</div>
+</div>
+</footer>
+</div>
+    <!-- ==============================================Area-10 end====================================================================-->
+    
+   
+
+    
+   
+    
+</body>
+</html>
